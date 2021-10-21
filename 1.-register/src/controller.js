@@ -1,5 +1,18 @@
 const User = require('./User');
 const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+
+// Generando Token
+function generateToken(user){
+    return jwt.sign(
+        {
+            id: user._id,
+            username: user.username
+        }, 
+        "SECRET_KEY", 
+        { expiresIn: '1h'}
+    );
+};
 
 // Registrando un Usuario
 const addUser = async (req, res) => {
@@ -48,6 +61,41 @@ const addUser = async (req, res) => {
     }
 };
 
+
+// Login Usuario
+const loginUser = async (req, res) => {
+    const { username, password } = req.body;
+    let errors = {};
+
+    try {
+        if(username.trim() === "") errors.username = "Ingrese Usuario";
+        if(!password) errors.password = "Ingrese Contraseña";
+
+        if(Object.keys(errors).length > 0){
+            throw errors
+        }
+
+        const usuario = await User.findOne({ username });
+        if(!usuario) throw errors.username= "Usuario no econtrado";
+
+        const correctPassword = await bcrypt.compare(password, usuario.password);
+        if(!correctPassword) throw errors.password = 'La contraseña es incorrecta';
+
+        const token = generateToken(usuario)
+        
+        return res.status(200).json({
+            ...usuario.toJSON(),
+            token
+        });
+
+    } catch (err) {
+        // console.log(error)
+        return res.status(500).json({ err })
+    }
+
+};
+
 module.exports = {
-    addUser
+    addUser,
+    loginUser
 };

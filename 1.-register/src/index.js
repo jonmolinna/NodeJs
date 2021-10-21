@@ -26,4 +26,4 @@ app.get('/', (req, res) => res.status(200).send('I Message from Backend'));
 app.use('/api', router);
 
 // Listen
-app.listen(port, () => console.log(`Listening on Localhost: ${port}`));
+app.listen(port, () => console.log(`http://localhost:${port}/`));
