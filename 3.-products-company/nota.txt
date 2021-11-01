@@ -1,0 +1,16 @@
+npm install express
+npm install bcryptjs
+npm install cors
+npm install dotenv => variables de entorno
+npm install jsonwebtoken
+npm install mongoose
+npm install morgan => verifica las consulta url
+npm install helmet => valida informacion
+npm install nodemon -D
+
+npm install @babel/core @babel/cli @babel/node @babel/preset-env -D
+
+Investigar
+---------------------------------------
+express validator
+joi => para validar rutas
