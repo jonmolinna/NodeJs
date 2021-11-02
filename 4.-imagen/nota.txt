@@ -1,0 +1,14 @@
+Backend 
+------------------------------------
+npm install multer
+npm install express
+npm install mongoose
+npm install morgan
+npm install cors
+npm install nodemon -D
+
+npm install body-parser
+
+Frontend
+----------------------------------
+npm install axios
