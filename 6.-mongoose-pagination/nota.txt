@@ -1,0 +1,11 @@
+npm init -y
+
+npm install express
+npm install nodemon -D
+npm install mongoose
+npm install mongoose-paginate-v2
+
+
+datos
+-------------
+sudo service mongod start => levantar mongo en linux
