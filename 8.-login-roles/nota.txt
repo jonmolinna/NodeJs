@@ -1,0 +1,20 @@
+npm install typeorm -g
+
+typeorm init --name 8.-login-roles --database mysql --express
+
+npm install cors
+npm install jsonwebtoken
+npm install bcryptjs
+npm install class-validator
+npm install helmet => aplicaciones seguras
+
+npm install ts-node-dev -D
+npm install typescript -D
+npm install @types/bcryptjs -D
+npm install @types/cors -D
+npm install @types/jsonwebtoken -D
+npm install @types/express -D
+npm install @types/node -D
+npm install nodemon -D
+
+npm install
