@@ -1,0 +1,12 @@
+Client
+----------------------------------------------------
+npm install --save @stripe/react-stripe-js @stripe/stripe-js
+npm install bootswatch
+npm install axios
+
+Backend
+---------------------------------------------------
+npm init --y
+npm install express
+npm install stripe
+npm install cors
