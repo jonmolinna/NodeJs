@@ -4,7 +4,7 @@ import { Elements, CardElement, useStripe, useElements } from '@stripe/react-str
 import "bootswatch/dist/lux/bootstrap.min.css";
 import axios from 'axios';
 
-const stripePromise = loadStripe("pk_test_51Hei49LoD7pxih2RS0N9pHVGFctJGyTiN83pFWaNE7q3SJrG4rToSKANl8M0End8Q9K4Rlg6mCIFNDFsDesd8tpK00q7eFMiYb")
+const stripePromise = loadStripe("KEY_PUBLIC");
 
 const CheckoutForm = () => {
   const [loading, setLoading] = useState(false);
