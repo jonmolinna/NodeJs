@@ -1,0 +1,15 @@
+npm install bcrypt
+npm install body-parser
+npm install express
+npm install jsonwebtoken
+npm install mongoose
+npm install passport
+npm install passport-jwt
+npm install passport-local
+npm install nodemon -D
+
+npm install cookie-parser
+npm install debug
+npm install http-errors
+npm install jade ()
+npm install morgan
