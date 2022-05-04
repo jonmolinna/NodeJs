@@ -22,8 +22,8 @@ const groceryList = [
 
 // Middleware
 router.use((req, res, next) => {
-  console.log("Inside groceries Auth check Middleware");
-  console.log("Midle groce", req.user); // req.user => biene de passport y passport local
+  //console.log("Inside groceries Auth check Middleware");
+  //console.log("Midle groce", req.user); // req.user => biene de passport y passport local
   // if (req.session.user) next();
   if (req.user) next();
   else res.send(401);

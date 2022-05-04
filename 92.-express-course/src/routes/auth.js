@@ -6,7 +6,7 @@ const { hashPassword, comparePassword } = require("../utils/helpers");
 const router = Router();
 
 router.post("/login", passport.authenticate("local"), (req, res) => {
-  console.log("Logged In");
+  // console.log("Logged In");
   res.send(200);
 });
 
@@ -21,6 +21,19 @@ router.post("/register", async (req, res) => {
     res.status(200).json({ msg: "User created" });
   }
 });
+
+// Discord
+router.get("/discord", passport.authenticate("discord"), (req, res) => {
+  res.send(200);
+});
+
+router.get(
+  "/discord/redirect",
+  passport.authenticate("discord"),
+  (req, res) => {
+    res.send(200);
+  }
+);
 
 module.exports = router;
 

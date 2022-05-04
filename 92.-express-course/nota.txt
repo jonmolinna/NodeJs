@@ -6,8 +6,12 @@ npm install mongoose
 npm install bcryptjs
 npm install passport
 npm install passport-local
+npm install connect-mongo
+npm install passport-discord
 
 Tarea
 --------------------------------
 express Cookies
 express sesions
+
+http://localhost:9000/api/auth/discord/redirect
