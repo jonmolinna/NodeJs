@@ -1,0 +1,13 @@
+npm install express
+npm install nodemon -D
+npm install cookie-parser
+npm install express-session
+npm install mongoose
+npm install bcryptjs
+npm install passport
+npm install passport-local
+
+Tarea
+--------------------------------
+express Cookies
+express sesions
