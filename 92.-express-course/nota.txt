@@ -9,6 +9,10 @@ npm install passport-local
 npm install connect-mongo
 npm install passport-discord
 
+npm install --save-dev jest => pruebas 
+
+npm jest --init
+
 Tarea
 --------------------------------
 express Cookies
