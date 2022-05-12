@@ -1,0 +1,13 @@
+npm install express
+npm install nodemon -D
+npm install mongoose
+npm install passport
+npm install passport-local
+npm install passport-jwt
+npm install jsonwebtoken
+
+npm install cookie-parser
+npm install express-session
+npm install bcryptjs
+npm install connect-mongo
+npm install passport-discord
